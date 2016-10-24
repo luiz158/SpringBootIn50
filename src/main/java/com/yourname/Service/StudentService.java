@@ -12,7 +12,8 @@ import java.util.Collection;
 public class StudentService {
 
     @Autowired
-    @Qualifier("mongoData")
+    //@Qualifier("mongoData")
+    @Qualifier("fakeData")
     private StudentDao studentDao;
 
     public Collection<Student> getAllStudents(){
